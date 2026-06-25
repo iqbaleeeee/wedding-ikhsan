@@ -123,9 +123,9 @@ function App() {
             <div className="event-details">
               <p><strong>Minggu, 25 Agustus 2026</strong></p>
               <p>Pukul 08:00 - 10:00 WIB</p>
-              <p style={{marginTop: '1rem'}}>Masjid Agung Al-Hidayah<br/>Jl. Kebahagiaan No. 1, Jakarta</p>
+              <p style={{marginTop: '1rem'}}>Perumahan Puri Lakshita<br/>Tajurhalang, Kabupaten Bogor</p>
             </div>
-            <a href="#" className="btn-map">Buka di Google Maps</a>
+            <a href="https://maps.google.com/?q=Perumahan+Puri+Lakshita,+Tajurhalang,+Kabupaten+Bogor" target="_blank" rel="noopener noreferrer" className="btn-map">Buka di Google Maps</a>
           </div>
         </FadeInSection>
 
@@ -135,9 +135,9 @@ function App() {
             <div className="event-details">
               <p><strong>Minggu, 25 Agustus 2026</strong></p>
               <p>Pukul 11:00 - Selesai</p>
-              <p style={{marginTop: '1rem'}}>Gedung Serbaguna Indah<br/>Jl. Kenangan No. 99, Jakarta</p>
+              <p style={{marginTop: '1rem'}}>Perumahan Puri Lakshita<br/>Tajurhalang, Kabupaten Bogor</p>
             </div>
-            <a href="#" className="btn-map">Buka di Google Maps</a>
+            <a href="https://maps.google.com/?q=Perumahan+Puri+Lakshita,+Tajurhalang,+Kabupaten+Bogor" target="_blank" rel="noopener noreferrer" className="btn-map">Buka di Google Maps</a>
           </div>
         </FadeInSection>
       </section>
