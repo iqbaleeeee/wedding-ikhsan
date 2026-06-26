@@ -212,6 +212,26 @@ function App() {
             </motion.div>
           </section>
 
+          {/* Turut Mengundang Section */}
+          <section className="turut-mengundang-section">
+            <div className="floral-corner floral-top-left"></div>
+            <div className="floral-corner floral-bottom-right"></div>
+            <motion.div 
+              initial="hidden" 
+              whileInView="visible" 
+              viewport={{ once: true, margin: "-100px" }}
+              variants={staggerContainer}
+              className="turut-mengundang-content"
+            >
+              <motion.h2 variants={fadeUp} className="section-heading">Turut Mengundang</motion.h2>
+              <motion.div variants={fadeUp} className="turut-mengundang-list">
+                <p>Segenap Keluarga Besar Bapak Waryana & Ibu Yeti</p>
+                <p>Segenap Keluarga Besar Bapak Suherman & Ibu Dina</p>
+                <p>Serta Segenap Sahabat & Rekan-Rekan Kedua Mempelai</p>
+              </motion.div>
+            </motion.div>
+          </section>
+
           {/* Intro Section with Corner Florals */}
           <section className="intro-section">
             <div className="floral-corner floral-top-left"></div>
@@ -260,11 +280,11 @@ function App() {
                 transition={{ duration: 1, delay: 0.2 }}
               >
                 <div className="img-frame">
-                  <img src="/hero.jpg" alt="Indah" />
+                  <img src="/kak%20indah.jpeg" alt="Indah" />
                 </div>
                 <div className="couple-info">
                   <h2>Indah</h2>
-                  <p>Putri dari Bapak Fulan<br/>& Ibu Fulanah</p>
+                  <p>Putri dari Bapak Suherman<br/>& Ibu Dina</p>
                 </div>
               </motion.div>
 
@@ -327,7 +347,7 @@ function App() {
                 </motion.div>
                 <motion.div variants={fadeUp} className="event-detail-row">
                   <Clock size={20} />
-                  <span>Pagi - Selesai</span>
+                  <span>Jam 10 Pagi - Selesai</span>
                 </motion.div>
                 <motion.div variants={fadeUp} className="event-detail-row address">
                   <MapPin size={24} />
