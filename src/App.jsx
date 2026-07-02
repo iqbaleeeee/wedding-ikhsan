@@ -253,15 +253,34 @@ function App() {
 
           {/* Prewedding Photo Section */}
           <section className="prewedding-section">
-            <motion.div 
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true, margin: "-50px" }}
-              transition={{ duration: 1 }}
-              className="prewedding-container"
+            <motion.h2 
+              className="section-heading"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              style={{ marginBottom: '2rem' }}
             >
-              <img src="/hero.jpg" alt="Prewedding Ikhsan & Indah" className="prewedding-img" />
-            </motion.div>
+              Galeri Pre-Wedding
+            </motion.h2>
+            <div className="prewedding-gallery">
+              {[
+                '/prewed1.jpg',
+                '/prewed2.jpeg',
+                '/prewed3.jpeg',
+                '/prewed4.png'
+              ].map((src, index) => (
+                <motion.div 
+                  key={index}
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true, margin: "-50px" }}
+                  transition={{ duration: 0.8, delay: index * 0.15 }}
+                  className="gallery-item"
+                >
+                  <img src={src} alt={`Prewedding ${index + 1}`} className="prewedding-img" />
+                </motion.div>
+              ))}
+            </div>
           </section>
 
           {/* Couple Section */}
