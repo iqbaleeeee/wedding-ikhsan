@@ -140,7 +140,7 @@ function App() {
     <div className="app-wrapper">
       {/* Audio Element (Nusantara Theme) */}
       <audio ref={audioRef} loop preload="auto">
-        <source src="/music.mp3" type="audio/mp3" />
+        <source src="https://archive.org/download/juicy-luicy-lagu-nikah/Juicy%20Luicy%20-%20Lagu%20Nikah.mp3" type="audio/mp3" />
       </audio>
 
       {/* Tampilkan Tombol Musik & Animasi Daun Jatuh hanya jika undangan sudah dibuka */}
