@@ -405,6 +405,17 @@ function App() {
                   <MapPin size={24} />
                   <span>Kediaman Bapak Waryana & Ibu Yeti<br/>Perumahan Puri Lakshita No B12A RT 001 RW 006, Tajurhalang, Kab. Bogor</span>
                 </motion.div>
+                <motion.div variants={fadeUp} className="map-container" style={{ width: '100%', height: '250px', borderRadius: '12px', overflow: 'hidden', marginBottom: '1.5rem', border: '2px solid var(--primary-light)' }}>
+                  <iframe 
+                    src="https://maps.google.com/maps?q=Perumahan%20Puri%20Lakshita,%20Tajurhalang,%20Kabupaten%20Bogor&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                    width="100%" 
+                    height="100%" 
+                    style={{ border: 0 }} 
+                    allowFullScreen="" 
+                    loading="lazy" 
+                    referrerPolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </motion.div>
                 <motion.a 
                   variants={fadeUp}
                   href="https://maps.google.com/?q=Perumahan+Puri+Lakshita,+Tajurhalang,+Kabupaten+Bogor" 
@@ -412,7 +423,7 @@ function App() {
                   rel="noopener noreferrer" 
                   className="btn-outline"
                 >
-                  Lihat Lokasi
+                  Buka di Aplikasi Google Maps
                 </motion.a>
               </motion.div>
             </div>
