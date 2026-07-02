@@ -716,8 +716,8 @@
 }
 
 .footer-greeting {
-  font-family: var(--font-body);
-  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  font-family: var(--font-heading);
+  font-size: clamp(1.3rem, 3.5vw, 1.8rem);
   font-weight: 400;
   color: var(--bg);
   opacity: 0.9;
