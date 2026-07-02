@@ -717,11 +717,11 @@
 
 .footer-greeting {
   font-family: var(--font-heading);
-  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  font-size: clamp(2.5rem, 6vw, 4rem);
   font-weight: 600;
   color: var(--primary-dark);
-  margin-bottom: 1.5rem;
-  line-height: 1.4;
+  margin-bottom: 2rem;
+  line-height: 1.2;
 }
 
 .footer-message {
