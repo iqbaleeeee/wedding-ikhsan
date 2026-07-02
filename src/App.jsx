@@ -121,7 +121,7 @@ function App() {
     setIsOpen(true);
     // Mainkan musik saat undangan dibuka
     if (audioRef.current) {
-      audioRef.current.play();
+      audioRef.current.play().catch(e => console.log("Audio play failed:", e));
       setIsPlaying(true);
     }
     window.scrollTo(0, 0);
@@ -138,9 +138,10 @@ function App() {
 
   return (
     <div className="app-wrapper">
-      {/* Audio Element (Classic Wedding Song) */}
-      <audio ref={audioRef} loop>
-        <source src="https://upload.wikimedia.org/wikipedia/commons/a/a2/Bridal_Chorus_%28Richard_Wagner%29.ogg" type="audio/ogg" />
+      {/* Audio Element (Nusantara Theme) */}
+      <audio ref={audioRef} loop preload="auto">
+        <source src="https://ia800108.us.archive.org/27/items/Gamelan_201610/Gamelan.mp3" type="audio/mp3" />
+        <source src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Gamelan_pelog.ogg" type="audio/ogg" />
       </audio>
 
       {/* Tampilkan Tombol Musik & Animasi Daun Jatuh hanya jika undangan sudah dibuka */}
@@ -266,7 +267,7 @@ function App() {
                 </div>
                 <div className="couple-info">
                   <h2>Ikhsan</h2>
-                  <p>Putra dari Bapak Waryana<br/>& Ibu Yeti</p>
+                  <p>Putra dari Bapak Waryana<br/>& Ibu Yeti Nurhayati</p>
                 </div>
               </motion.div>
 
@@ -330,6 +331,9 @@ function App() {
                 <motion.div variants={fadeUp} className="event-detail-row address">
                   <MapPin size={24} />
                   <span>Leviticus 11</span>
+                </motion.div>
+                <motion.div variants={fadeUp} className="event-note" style={{ marginTop: '15px', padding: '10px', background: 'rgba(255,255,255,0.1)', borderRadius: '8px', borderLeft: '4px solid var(--accent)', fontSize: '0.9rem', fontStyle: 'italic', color: 'var(--accent)'}}>
+                  *Acara ini telah berlangsung. Undangan ini adalah untuk menghadiri resepsi Ngunduh Mantu di rumah pada tanggal 8 Agustus.
                 </motion.div>
               </motion.div>
 
