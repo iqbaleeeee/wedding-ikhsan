@@ -140,8 +140,7 @@ function App() {
     <div className="app-wrapper">
       {/* Audio Element (Nusantara Theme) */}
       <audio ref={audioRef} loop preload="auto">
-        <source src="https://ia800108.us.archive.org/27/items/Gamelan_201610/Gamelan.mp3" type="audio/mp3" />
-        <source src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Gamelan_pelog.ogg" type="audio/ogg" />
+        <source src="/music.mp3" type="audio/mp3" />
       </audio>
 
       {/* Tampilkan Tombol Musik & Animasi Daun Jatuh hanya jika undangan sudah dibuka */}
@@ -228,7 +227,6 @@ function App() {
               <motion.div variants={fadeUp} className="turut-mengundang-list">
                 <p>Segenap Keluarga Besar Bapak Waryana & Ibu Yeti</p>
                 <p>Segenap Keluarga Besar Bapak Suherman & Ibu Dina</p>
-                <p>Serta Segenap Sahabat & Rekan-Rekan Kedua Mempelai</p>
               </motion.div>
             </motion.div>
           </section>
