@@ -475,6 +475,16 @@
   margin-bottom: 1rem;
 }
 
+.couple-info.text-only {
+  text-align: center !important;
+  width: 100%;
+}
+
+.couple-card.groom .couple-info.text-only,
+.couple-card.bride .couple-info.text-only {
+  margin: 0 auto;
+}
+
 .couple-info p {
   color: var(--primary);
   font-weight: 500;
@@ -664,19 +674,53 @@
   text-align: center;
   background-color: var(--primary-dark);
   color: var(--bg);
+  position: relative;
 }
 
-.footer-section h2 {
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.footer-greeting {
   font-family: var(--font-heading);
-  font-size: clamp(3rem, 8vw, 5rem);
-  margin-bottom: 1rem;
+  font-size: clamp(1.4rem, 3vw, 1.8rem);
+  color: var(--accent);
 }
 
-.footer-section p {
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  font-size: 0.9rem;
-  opacity: 0.8;
+.footer-message {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.footer-family {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.8;
+  margin: 2rem 0;
+  color: var(--primary-light);
+}
+
+.footer-names {
+  font-family: var(--font-heading);
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 400;
+  margin-top: 1rem;
+  color: var(--bg);
+}
+
+.footer-bottom-line {
+  width: 100px;
+  height: 2px;
+  background-color: var(--accent);
+  margin-top: 2rem;
+  opacity: 0.5;
 }
 
 /* RESPONSIVE DESIGN (Mobile) */

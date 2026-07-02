@@ -162,12 +162,6 @@ function App() {
             initial="hidden"
             animate="visible"
           >
-            <motion.img 
-              variants={fadeUp} 
-              src="https://upload.wikimedia.org/wikipedia/commons/2/23/Gunungan_wayang_kulit.svg" 
-              alt="Gunungan" 
-              className="gunungan-cover" 
-            />
             <motion.p variants={fadeUp} className="subtitle">Ngunduh Mantu</motion.p>
             <motion.h1 variants={fadeUp} className="title">Ikhsan & Indah</motion.h1>
             <motion.div variants={fadeUp} className="date-badge">
@@ -281,12 +275,9 @@ function App() {
                 viewport={{ once: true, margin: "-100px" }}
                 transition={{ duration: 1 }}
               >
-                <div className="img-frame">
-                  <img src="/hero.jpg" alt="Ikhsan" />
-                </div>
-                <div className="couple-info">
+                <div className="couple-info text-only">
                   <h2>Ikhsan</h2>
-                  <p>Putra dari Bapak Waryana<br/>& Ibu Yeti Nurhayati</p>
+                  <p className="parents-text">Putra dari Bapak Waryana<br/>& Ibu Yeti Nurhayati</p>
                 </div>
               </motion.div>
 
@@ -299,12 +290,9 @@ function App() {
                 viewport={{ once: true, margin: "-100px" }}
                 transition={{ duration: 1, delay: 0.2 }}
               >
-                <div className="img-frame">
-                  <img src="/kak%20indah.jpeg" alt="Indah" />
-                </div>
-                <div className="couple-info">
+                <div className="couple-info text-only">
                   <h2>Indah</h2>
-                  <p>Putri dari Bapak Suherman<br/>& Ibu Dina</p>
+                  <p className="parents-text">Putri dari Bapak Suherman<br/>& Ibu Dina</p>
                 </div>
               </motion.div>
 
@@ -416,9 +404,19 @@ function App() {
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 1 }}
+              className="footer-content"
             >
-              <h2>Ikhsan & Indah</h2>
-              <p>Terima Kasih</p>
+              <h3 className="footer-greeting">Wassalamu'alaikum Warahmatullahi Wabarakatuh</h3>
+              <p className="footer-message">Kehadiran Anda adalah anugerah terbesar dalam lembaran baru kehidupan kami.</p>
+              
+              <div className="footer-family">
+                <p>Kami yang berbahagia,</p>
+                <p>Kel. Bpk Waryana & Ibu Yeti Nurhayati</p>
+                <p>Kel. Bpk Suherman & Ibu Dina</p>
+              </div>
+
+              <h2 className="footer-names">Ikhsan & Indah</h2>
+              <div className="footer-bottom-line"></div>
             </motion.div>
           </footer>
         </main>
