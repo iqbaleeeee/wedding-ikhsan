@@ -39,6 +39,18 @@ const FallingPetals = () => {
   );
 };
 
+// Corak Gunungan (Custom SVG Motif)
+const GununganSVG = () => (
+  <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '2rem', opacity: 0.8 }}>
+    <svg width="120" height="120" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M50 5 C75 40, 95 65, 95 95 L5 95 C5 65, 25 40, 50 5 Z" fill="var(--primary-light)" fillOpacity="0.15" stroke="var(--primary)" strokeWidth="2" strokeLinejoin="round"/>
+      <path d="M50 20 C65 45, 80 65, 80 95 L20 95 C20 65, 35 45, 50 20 Z" fill="none" stroke="var(--primary)" strokeWidth="1.5" strokeDasharray="4 4" strokeLinejoin="round"/>
+      <path d="M50 40 C55 60, 65 75, 65 95 L35 95 C35 75, 45 60, 50 40 Z" fill="var(--accent)" fillOpacity="0.2" stroke="var(--accent)" strokeWidth="1.5" strokeLinejoin="round"/>
+      <line x1="0" y1="95" x2="100" y2="95" stroke="var(--primary)" strokeWidth="3" />
+    </svg>
+  </div>
+);
+
 // Komponen Hitung Mundur (Countdown)
 const CountdownTimer = () => {
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
@@ -211,6 +223,7 @@ function App() {
           <section className="turut-mengundang-section">
             <div className="floral-corner floral-top-right"></div>
             <div className="floral-corner floral-bottom-left"></div>
+            <GununganSVG />
             <motion.div 
               initial="hidden" 
               whileInView="visible" 
@@ -229,6 +242,7 @@ function App() {
           {/* Intro Section with Corner Florals */}
           <section className="intro-section">
             <div className="floral-corner floral-top-left"></div>
+            <GununganSVG />
             <motion.div 
               initial="hidden" 
               whileInView="visible" 
@@ -257,6 +271,7 @@ function App() {
           <section className="prewedding-section">
             <div className="floral-corner floral-top-left"></div>
             <div className="floral-corner floral-bottom-right"></div>
+            <GununganSVG />
             <motion.h2 
               className="section-heading"
               initial={{ opacity: 0, y: 30 }}
@@ -329,6 +344,7 @@ function App() {
             <div className="floral-corner floral-top-left"></div>
             <div className="floral-corner floral-bottom-right"></div>
             
+            <GununganSVG />
             <motion.h2 
               className="section-heading"
               initial={{ opacity: 0, y: 30 }}
