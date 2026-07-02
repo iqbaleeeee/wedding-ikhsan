@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
 
 :root {
-  --primary: #3D7337; /* Forest Green */
-  --primary-light: #E4E0B1; /* Light Beige */
-  --primary-dark: #14501A; /* Dark Green */
-  --accent: #E4E0B1; /* Light Beige */
-  --bg: #FAF6E3; /* Cream */
-  --text-main: #2C3E50;
-  --text-muted: #6B7280;
+  --primary: #5A2A4A; /* Elegant Plum/Magenta */
+  --primary-light: #A58B9C; /* Soft grayish purple */
+  --primary-dark: #321629; /* Dark Plum */
+  --accent: #B29B63; /* Subtle Gold */
+  --bg: #FDFBF7; /* Off-white / Cream */
+  --text-main: #4A4A4A;
+  --text-muted: #8B7E89;
   
   --font-heading: 'Playfair Display', serif;
   --font-body: 'Montserrat', sans-serif;

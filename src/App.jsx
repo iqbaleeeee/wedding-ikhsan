@@ -167,6 +167,12 @@ function App() {
             initial="hidden"
             animate="visible"
           >
+            <motion.img 
+              variants={fadeUp} 
+              src="https://upload.wikimedia.org/wikipedia/commons/2/23/Gunungan_wayang_kulit.svg" 
+              alt="Gunungan" 
+              className="gunungan-cover" 
+            />
             <motion.p variants={fadeUp} className="subtitle">Ngunduh Mantu</motion.p>
             <motion.h1 variants={fadeUp} className="title">Ikhsan & Indah</motion.h1>
             <motion.div variants={fadeUp} className="date-badge">
@@ -214,19 +220,18 @@ function App() {
 
           {/* Turut Mengundang Section */}
           <section className="turut-mengundang-section">
-            <div className="floral-corner floral-top-left"></div>
-            <div className="floral-corner floral-bottom-right"></div>
             <motion.div 
               initial="hidden" 
               whileInView="visible" 
-              viewport={{ once: true, margin: "-100px" }}
+              viewport={{ once: true, margin: "-50px" }}
               variants={staggerContainer}
               className="turut-mengundang-content"
             >
               <motion.h2 variants={fadeUp} className="section-heading">Turut Mengundang</motion.h2>
               <motion.div variants={fadeUp} className="turut-mengundang-list">
-                <p>Segenap Keluarga Besar Bapak Waryana & Ibu Yeti</p>
-                <p>Segenap Keluarga Besar Bapak Suherman & Ibu Dina</p>
+                <p>1. Segenap Keluarga Besar Bapak Waryana & Ibu Yeti Nurhayati</p>
+                <p>2. Segenap Keluarga Besar Bapak Suherman & Ibu Dina</p>
+                <p>3. Segenap Sahabat & Rekan-Rekan Kedua Mempelai</p>
               </motion.div>
             </motion.div>
           </section>
@@ -237,14 +242,23 @@ function App() {
             <motion.div 
               initial="hidden" 
               whileInView="visible" 
-              viewport={{ once: true, margin: "-100px" }}
+              viewport={{ once: true, margin: "-50px" }}
               variants={staggerContainer}
             >
+              <motion.h3 variants={fadeUp} className="greeting-text">
+                Assalamu'alaikum Warahmatullahi Wabarakatuh
+              </motion.h3>
+              <motion.p variants={fadeUp} className="intro-paragraph">
+                Maha Suci Allah yang telah menciptakan makhluk-Nya berpasang-pasangan. Ya Allah, perkenankanlah kami merangkaikan kasih sayang yang Kau ciptakan di antara putra-putri kami.
+              </motion.p>
               <motion.p variants={fadeUp} className="quran-text">
                 "Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu isteri-isteri dari jenismu sendiri, supaya kamu cenderung dan merasa tenteram kepadanya..."
               </motion.p>
               <motion.p variants={fadeUp} className="quran-ref">
-                Ar-Rum : 21
+                (QS. Ar-Rum : 21)
+              </motion.p>
+              <motion.p variants={fadeUp} className="intro-paragraph bottom-text">
+                Dengan memohon rahmat dan ridho Allah Subhanahu Wa Ta'ala, kami mengundang Bapak/Ibu/Saudara/i untuk menghadiri acara Ngunduh Mantu putra-putri kami.
               </motion.p>
             </motion.div>
           </section>
