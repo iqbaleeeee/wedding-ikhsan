@@ -143,14 +143,9 @@ function App() {
         <source src="https://archive.org/download/juicy-luicy-lagu-nikah/Juicy%20Luicy%20-%20Lagu%20Nikah.mp3" type="audio/mp3" />
       </audio>
 
-      {/* Tampilkan Tombol Musik & Animasi Daun Jatuh hanya jika undangan sudah dibuka */}
+      {/* Tampilkan Animasi Daun Jatuh hanya jika undangan sudah dibuka */}
       {isOpen && (
-        <>
-          <FallingPetals />
-          <button className={`audio-btn ${isPlaying ? 'spin' : ''}`} onClick={toggleMusic}>
-            <Music size={24} />
-          </button>
-        </>
+        <FallingPetals />
       )}
 
       {/* Cover Screen */}
@@ -231,7 +226,6 @@ function App() {
               <motion.div variants={fadeUp} className="turut-mengundang-list">
                 <p>1. Segenap Keluarga Besar Bapak Waryana & Ibu Yeti Nurhayati</p>
                 <p>2. Segenap Keluarga Besar Bapak Suherman & Ibu Dina</p>
-                <p>3. Segenap Sahabat & Rekan-Rekan Kedua Mempelai</p>
               </motion.div>
             </motion.div>
           </section>
@@ -260,6 +254,19 @@ function App() {
               <motion.p variants={fadeUp} className="intro-paragraph bottom-text">
                 Dengan memohon rahmat dan ridho Allah Subhanahu Wa Ta'ala, kami mengundang Bapak/Ibu/Saudara/i untuk menghadiri acara Ngunduh Mantu putra-putri kami.
               </motion.p>
+            </motion.div>
+          </section>
+
+          {/* Prewedding Photo Section */}
+          <section className="prewedding-section">
+            <motion.div 
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ duration: 1 }}
+              className="prewedding-container"
+            >
+              <img src="/hero.jpg" alt="Prewedding Ikhsan & Indah" className="prewedding-img" />
             </motion.div>
           </section>
 
