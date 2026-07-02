@@ -140,7 +140,7 @@ function App() {
     <div className="app-wrapper">
       {/* Audio Element (Nusantara Theme) */}
       <audio ref={audioRef} loop preload="auto">
-        <source src="https://archive.org/download/juicy-luicy-lagu-nikah/Juicy%20Luicy%20-%20Lagu%20Nikah.mp3" type="audio/mp3" />
+        <source src="/sampai-jadi-debu.mp3" type="audio/mp3" />
       </audio>
 
       {/* Tampilkan Animasi Daun Jatuh hanya jika undangan sudah dibuka */}
@@ -209,6 +209,8 @@ function App() {
 
           {/* Turut Mengundang Section */}
           <section className="turut-mengundang-section">
+            <div className="floral-corner floral-top-right"></div>
+            <div className="floral-corner floral-bottom-left"></div>
             <motion.div 
               initial="hidden" 
               whileInView="visible" 
@@ -253,6 +255,8 @@ function App() {
 
           {/* Prewedding Photo Section */}
           <section className="prewedding-section">
+            <div className="floral-corner floral-top-left"></div>
+            <div className="floral-corner floral-bottom-right"></div>
             <motion.h2 
               className="section-heading"
               initial={{ opacity: 0, y: 30 }}
@@ -285,6 +289,8 @@ function App() {
 
           {/* Couple Section */}
           <section className="couple-section">
+            <div className="floral-corner floral-top-right"></div>
+            <div className="floral-corner floral-bottom-left"></div>
             <div className="couple-grid">
               
               <motion.div 
@@ -377,11 +383,11 @@ function App() {
                 </motion.div>
                 <motion.div variants={fadeUp} className="event-detail-row">
                   <Clock size={20} />
-                  <span>Jam 10 Pagi - Selesai</span>
+                  <span>Jam 10 Pagi - 19.00</span>
                 </motion.div>
                 <motion.div variants={fadeUp} className="event-detail-row address">
                   <MapPin size={24} />
-                  <span>Kediaman Bapak Waryana & Ibu Yeti<br/>Perumahan Puri Lakshita, Tajurhalang, Kab. Bogor</span>
+                  <span>Kediaman Bapak Waryana & Ibu Yeti<br/>Perumahan Puri Lakshita No B12A RT 001 RW 006, Tajurhalang, Kab. Bogor</span>
                 </motion.div>
                 <motion.a 
                   variants={fadeUp}
@@ -398,6 +404,8 @@ function App() {
 
           {/* Closing / Doa Restu (Menggantikan Wedding Gift) */}
           <section className="gift-section">
+            <div className="floral-corner floral-top-left"></div>
+            <div className="floral-corner floral-top-right"></div>
             <motion.div
               initial="hidden"
               whileInView="visible"
