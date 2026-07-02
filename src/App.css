@@ -726,18 +726,17 @@
 
 .footer-message {
   font-family: var(--font-body);
-  font-size: 1.1rem;
-  line-height: 1.6;
+  font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+  line-height: 1.8;
   color: var(--text-main);
 }
 
 .footer-family {
   font-family: var(--font-body);
-  font-size: 1.1rem;
+  font-size: clamp(0.9rem, 2.5vw, 1.1rem);
   line-height: 1.8;
   margin: 2rem 0;
-  color: var(--primary);
-  font-weight: 500;
+  color: var(--text-main);
 }
 
 .footer-names {
