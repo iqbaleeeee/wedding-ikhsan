@@ -1,5 +1,10 @@
 /* App.css (Responsive, Nusantara Floral Design, + Animations) */
 
+/* Section Boundaries */
+section:not(.hero-section) {
+  border-top: 2px solid var(--primary-light);
+}
+
 /* Nusantara Pattern Background */
 .app-wrapper {
   background-color: var(--bg);
@@ -342,8 +347,6 @@
 .turut-mengundang-section {
   padding: 6rem 2rem;
   background-color: rgba(250, 246, 227, 0.9);
-  border-top: 2px solid var(--primary-light);
-  border-bottom: 2px solid var(--primary-light);
   color: var(--primary-dark);
   text-align: center;
   position: relative;
@@ -702,7 +705,6 @@
   padding: 6rem 2rem 4rem;
   text-align: center;
   background-color: rgba(250, 246, 227, 0.9);
-  border-top: 2px solid var(--primary-light);
   color: var(--text-main);
   position: relative;
 }
