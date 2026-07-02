@@ -701,7 +701,8 @@
 .footer-section {
   padding: 6rem 2rem 4rem;
   text-align: center;
-  background-color: transparent;
+  background-color: rgba(250, 246, 227, 0.9);
+  border-top: 2px solid var(--primary-light);
   color: var(--text-main);
   position: relative;
 }
@@ -717,11 +718,10 @@
 
 .footer-greeting {
   font-family: var(--font-heading);
-  font-size: clamp(2.5rem, 6vw, 4rem);
-  font-weight: 600;
-  color: var(--primary-dark);
-  margin-bottom: 2rem;
-  line-height: 1.2;
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+  line-height: 1.4;
 }
 
 .footer-message {
