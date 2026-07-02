@@ -8,8 +8,8 @@ const FallingPetals = () => {
   const [petals, setPetals] = useState([]);
 
   useEffect(() => {
-    // Generate 20 kelopak bunga dengan posisi dan delay acak
-    const newPetals = Array.from({ length: 20 }).map((_, i) => ({
+    // Generate 40 kelopak bunga dengan posisi dan delay acak
+    const newPetals = Array.from({ length: 40 }).map((_, i) => ({
       id: i,
       left: `${Math.random() * 100}vw`,
       animationDuration: `${Math.random() * 3 + 4}s`,
@@ -140,7 +140,7 @@ function App() {
     <div className="app-wrapper">
       {/* Audio Element (Nusantara Theme) */}
       <audio ref={audioRef} loop preload="auto">
-        <source src="/sampai-jadi-debu.mp3" type="audio/mp3" />
+        <source src="https://archive.org/download/juicy-luicy-lagu-nikah/Juicy%20Luicy%20-%20Lagu%20Nikah.mp3" type="audio/mp3" />
       </audio>
 
       {/* Tampilkan Animasi Daun Jatuh hanya jika undangan sudah dibuka */}
