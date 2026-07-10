@@ -5,9 +5,9 @@
   --primary-light: #C4BA86; /* Khaki */
   --primary-dark: #005F02; /* Dark Green */
   --accent: #C4BA86; /* Khaki */
-  --bg: #F6EAC9; /* Bright Light Cream */
-  --text-main: #005F02; /* Dark Green text for light bg */
-  --text-muted: #4C7E4F; /* Medium Green for muted text */
+  --bg: #4C7E4F; /* Green Background */
+  --text-main: #F6EAC9; /* Cream text for green bg */
+  --text-muted: #C4BA86; /* Khaki for muted text */
   
   --font-heading: 'Playfair Display', serif;
   --font-body: 'Montserrat', sans-serif;
