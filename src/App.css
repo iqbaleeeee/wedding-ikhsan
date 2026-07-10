@@ -353,7 +353,7 @@ section:not(.hero-section)::after {
 .gunungan-cover {
   width: clamp(100px, 20vw, 180px);
   margin-bottom: 2rem;
-  filter: brightness(0) saturate(100%) invert(18%) sepia(87%) saturate(2396%) hue-rotate(108deg) brightness(97%) contrast(106%); /* Dark Green */
+  filter: brightness(0) sepia(1) hue-rotate(30deg) saturate(30%) brightness(30%); /* Dark Olive */
   opacity: 0.9;
 }
 
