@@ -175,7 +175,7 @@ function App() {
             animate="visible"
           >
             <motion.p variants={fadeUp} className="subtitle">Ngunduh Mantu</motion.p>
-            <motion.h1 variants={fadeUp} className="title">Ikhsan & Indah</motion.h1>
+            <motion.h1 variants={fadeUp} className="title">Ikhsan Pratama Nuriana<br/>&<br/>Indah Nur Ocvtaviani</motion.h1>
             <motion.div variants={fadeUp} className="date-badge">
               <span>08</span>
               <span className="divider">/</span>
@@ -212,7 +212,7 @@ function App() {
               animate="visible"
             >
               <motion.p variants={fadeUp} className="subtitle">Ngunduh Mantu</motion.p>
-              <motion.h1 variants={fadeUp} className="title large">Ikhsan & Indah</motion.h1>
+              <motion.h1 variants={fadeUp} className="title large">Ikhsan Pratama Nuriana<br/>&<br/>Indah Nur Ocvtaviani</motion.h1>
               <motion.div variants={fadeUp} className="scroll-indicator">
                 <p>Scroll ke Bawah</p>
               </motion.div>
@@ -316,7 +316,7 @@ function App() {
                 transition={{ duration: 1 }}
               >
                 <div className="couple-info text-only">
-                  <h2>Ikhsan</h2>
+                  <h2>Ikhsan Pratama Nuriana</h2>
                   <p className="parents-text">Putra dari Bapak Waryana<br/>& Ibu Yeti Nurhayati</p>
                 </div>
               </motion.div>
@@ -331,7 +331,7 @@ function App() {
                 transition={{ duration: 1, delay: 0.2 }}
               >
                 <div className="couple-info text-only">
-                  <h2>Indah</h2>
+                  <h2>Indah Nur Ocvtaviani</h2>
                   <p className="parents-text">Putri dari Bapak Suherman<br/>& Ibu Dina</p>
                 </div>
               </motion.div>
@@ -469,7 +469,7 @@ function App() {
                 <p>Kel. Bpk Suherman & Ibu Dina</p>
               </div>
 
-              <h2 className="footer-names">Ikhsan & Indah</h2>
+              <h2 className="footer-names">Ikhsan Pratama Nuriana & Indah Nur Ocvtaviani</h2>
               <div className="footer-bottom-line"></div>
             </motion.div>
           </footer>

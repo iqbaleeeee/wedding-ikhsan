@@ -6,8 +6,8 @@
   --primary-dark: #403F31; /* Dark Olive (For Text) */
   --accent: #CEB594; /* Sand / Beige */
   --bg: #6B6B54; /* Olive Green Background */
-  --text-main: #E2E2E2; /* Light Gray text for Olive bg */
-  --text-muted: #CEB594; /* Sand for muted text */
+  --text-main: #403F31; /* Dark Olive for high contrast on light cards */
+  --text-muted: #6B6B54; /* Olive Green for muted text */
   
   --font-heading: 'Playfair Display', serif;
   --font-body: 'Montserrat', sans-serif;
@@ -31,7 +31,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
   font-weight: 600;
-  color: var(--primary-light);
+  color: var(--primary-dark);
 }
 
 img {
