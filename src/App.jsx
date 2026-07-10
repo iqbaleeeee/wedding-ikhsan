@@ -175,7 +175,7 @@ function App() {
             animate="visible"
           >
             <motion.p variants={fadeUp} className="subtitle">Ngunduh Mantu</motion.p>
-            <motion.h1 variants={fadeUp} className="title">Ikhsan Pratama Nuriana<br/>&<br/>Indah Nur Ocvtaviani</motion.h1>
+            <motion.h1 variants={fadeUp} className="title">Ikhsan Pratama Nuriana<br/>&<br/>Indah Nur Octaviani</motion.h1>
             <motion.div variants={fadeUp} className="date-badge">
               <span>08</span>
               <span className="divider">/</span>
@@ -212,7 +212,7 @@ function App() {
               animate="visible"
             >
               <motion.p variants={fadeUp} className="subtitle">Ngunduh Mantu</motion.p>
-              <motion.h1 variants={fadeUp} className="title large">Ikhsan Pratama Nuriana<br/>&<br/>Indah Nur Ocvtaviani</motion.h1>
+              <motion.h1 variants={fadeUp} className="title large">Ikhsan Pratama Nuriana<br/>&<br/>Indah Nur Octaviani</motion.h1>
               <motion.div variants={fadeUp} className="scroll-indicator">
                 <p>Scroll ke Bawah</p>
               </motion.div>
@@ -331,7 +331,7 @@ function App() {
                 transition={{ duration: 1, delay: 0.2 }}
               >
                 <div className="couple-info text-only">
-                  <h2>Indah Nur Ocvtaviani</h2>
+                  <h2>Indah Nur Octaviani</h2>
                   <p className="parents-text">Putri dari Bapak Suherman<br/>& Ibu Dina</p>
                 </div>
               </motion.div>
@@ -448,6 +448,13 @@ function App() {
                 <br/><br/>
                 Atas kehadiran dan doa restunya, kami ucapkan terima kasih yang sebesar-besarnya. Semoga rahmat dan berkah senantiasa menyertai kita semua.
               </motion.p>
+              <br/>
+              <motion.div variants={fadeUp} className="arabic-prayer" style={{ fontSize: '1.5rem', marginTop: '1rem', lineHeight: '2', fontFamily: 'serif' }}>
+                بَارَكَ اللَّهُ لَكَ وَبَارَكَ عَلَيْكَ وَجَمَعَ بَيْنَكُمَا فِي خَيْرٍ
+                <p style={{ fontSize: '1rem', marginTop: '0.8rem', fontStyle: 'italic', fontFamily: 'var(--font-body)' }}>
+                  "Semoga Allah memberkahimu dan menetapkan keberkahan atasmu, serta mengumpulkan kalian berdua dalam kebaikan."
+                </p>
+              </motion.div>
             </motion.div>
           </section>
 
@@ -469,7 +476,7 @@ function App() {
                 <p>Kel. Bpk Suherman & Ibu Dina</p>
               </div>
 
-              <h2 className="footer-names">Ikhsan Pratama Nuriana & Indah Nur Ocvtaviani</h2>
+              <h2 className="footer-names">Ikhsan Pratama Nuriana & Indah Nur Octaviani</h2>
               <div className="footer-bottom-line"></div>
             </motion.div>
           </footer>
