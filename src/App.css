@@ -6,8 +6,8 @@ section:not(.hero-section) {
   position: relative;
   border: 2px solid var(--primary);
   border-radius: 12px;
-  background-color: rgba(253, 251, 247, 0.85) !important;
-  box-shadow: inset 0 0 0 6px rgba(253, 251, 247, 0.85), inset 0 0 0 8px var(--primary-light), 0 10px 30px rgba(0,0,0,0.1);
+  background-color: rgba(0, 0, 0, 0.25) !important;
+  box-shadow: inset 0 0 0 6px rgba(0, 0, 0, 0.1), inset 0 0 0 8px var(--primary-dark), 0 10px 30px rgba(0,0,0,0.3);
   z-index: 2;
 }
 
@@ -179,7 +179,7 @@ section:not(.hero-section)::after {
 .cover-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(253, 251, 247, 0.4); /* Light overlay to ensure text is readable while keeping HD theme visible */
+  background: rgba(0, 0, 0, 0.6); /* Dark overlay */
   backdrop-filter: blur(2px);
   z-index: 2;
 }
@@ -197,8 +197,8 @@ section:not(.hero-section)::after {
   width: 100%;
   border: 2px solid var(--primary);
   border-radius: 12px;
-  background-color: rgba(253, 251, 247, 0.85); /* Frosty background to separate from texture */
-  box-shadow: inset 0 0 0 6px rgba(253, 251, 247, 0.85), inset 0 0 0 8px var(--primary-light), 0 10px 30px rgba(0,0,0,0.1);
+  background-color: rgba(0, 0, 0, 0.4); /* Frosty background to separate from texture */
+  box-shadow: inset 0 0 0 6px rgba(0, 0, 0, 0.1), inset 0 0 0 8px var(--primary-dark), 0 10px 30px rgba(0,0,0,0.3);
 }
 
 .cover-content::before, .cover-content::after {
@@ -307,7 +307,7 @@ section:not(.hero-section)::after {
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(253, 251, 247, 0.4);
+  background: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(2px);
   z-index: 2;
 }
@@ -382,8 +382,8 @@ section:not(.hero-section)::after {
 /* Turut Mengundang Section */
 .turut-mengundang-section {
   padding: 6rem 2rem;
-  background-color: rgba(250, 246, 227, 0.9);
-  color: var(--primary-dark);
+  background-color: rgba(0, 0, 0, 0.3);
+  color: var(--primary-light);
   text-align: center;
   position: relative;
 }
@@ -571,7 +571,7 @@ section:not(.hero-section)::after {
 /* Events */
 .event-section {
   padding: 8rem 2rem;
-  background-color: rgba(248, 246, 242, 0.85);
+  background-color: rgba(0, 0, 0, 0.3);
   color: var(--text-main);
   text-align: center;
   position: relative;
@@ -598,8 +598,8 @@ section:not(.hero-section)::after {
 }
 
 .glass-card {
-  background: rgba(255, 255, 255, 0.8);
-  border: 1px solid var(--primary-light);
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid var(--primary-dark);
   backdrop-filter: blur(10px);
   padding: 2.5rem;
   border-radius: 16px;
@@ -692,11 +692,11 @@ section:not(.hero-section)::after {
 }
 
 .bank-card {
-  background-color: #fff;
+  background-color: rgba(0, 0, 0, 0.4);
   padding: 2.5rem;
   border-radius: 20px;
-  box-shadow: 0 10px 40px rgba(0,0,0,0.05);
-  border: 1px solid var(--primary-light);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+  border: 1px solid var(--primary-dark);
   position: relative;
   overflow: hidden;
   flex: 1;
@@ -740,7 +740,7 @@ section:not(.hero-section)::after {
 .footer-section {
   padding: 6rem 2rem 4rem;
   text-align: center;
-  background-color: rgba(250, 246, 227, 0.9);
+  background-color: rgba(0, 0, 0, 0.3);
   color: var(--text-main);
   position: relative;
 }
