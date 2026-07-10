@@ -188,7 +188,7 @@ section:not(.hero-section)::after {
   position: relative;
   z-index: 3;
   text-align: center;
-  color: var(--primary-dark);
+  color: var(--primary-light);
   padding: 4rem 2rem;
   display: flex;
   flex-direction: column;
@@ -239,7 +239,7 @@ section:not(.hero-section)::after {
   font-weight: 600;
   margin-bottom: 2rem;
   line-height: 1.1;
-  color: var(--primary-dark);
+  color: var(--primary-light);
 }
 
 .date-badge {
@@ -255,7 +255,7 @@ section:not(.hero-section)::after {
   border-bottom: 1px solid var(--primary);
   padding: 10px 0;
   width: fit-content;
-  color: var(--primary-dark);
+  color: var(--primary-light);
 }
 
 .date-badge .divider {
@@ -264,8 +264,8 @@ section:not(.hero-section)::after {
 }
 
 .btn-open-envelope {
-  background: var(--primary-dark);
-  color: var(--bg);
+  background: var(--primary-light);
+  color: var(--primary-dark);
   border: 1px solid var(--primary-light);
   padding: 14px 32px;
   border-radius: 50px;
@@ -323,7 +323,7 @@ section:not(.hero-section)::after {
 .hero-text .title.large {
   font-size: clamp(3.5rem, 12vw, 6rem);
   line-height: 1.1;
-  color: var(--primary-dark);
+  color: var(--primary-light);
   margin-top: 1rem;
 }
 
@@ -340,7 +340,7 @@ section:not(.hero-section)::after {
   font-family: var(--font-body);
   font-size: 0.9rem;
   letter-spacing: 2px;
-  color: var(--primary-dark);
+  color: var(--primary-light);
   animation: bounce 2s infinite;
 }
 
@@ -353,7 +353,7 @@ section:not(.hero-section)::after {
 .gunungan-cover {
   width: clamp(100px, 20vw, 180px);
   margin-bottom: 2rem;
-  filter: brightness(0) saturate(100%) invert(19%) sepia(10%) saturate(3501%) hue-rotate(279deg) brightness(94%) contrast(89%); /* Matches --primary-dark */
+  filter: brightness(0) invert(1) opacity(0.9); /* Make it light for dark theme */
   opacity: 0.9;
 }
 
@@ -389,7 +389,7 @@ section:not(.hero-section)::after {
 }
 
 .turut-mengundang-section .section-heading {
-  color: var(--primary-dark);
+  color: var(--primary-light);
   margin-bottom: 3rem;
 }
 
@@ -417,7 +417,7 @@ section:not(.hero-section)::after {
   font-family: var(--font-heading);
   font-size: clamp(1.4rem, 4vw, 2rem);
   font-style: italic;
-  color: var(--primary-dark);
+  color: var(--primary-light);
   line-height: 1.6;
   margin-bottom: 2rem;
 }
@@ -539,7 +539,7 @@ section:not(.hero-section)::after {
 .couple-info h2 {
   font-size: clamp(2.5rem, 6vw, 4rem);
   font-family: var(--font-heading);
-  color: var(--primary-dark);
+  color: var(--primary-light);
   margin-bottom: 1rem;
 }
 
@@ -613,7 +613,7 @@ section:not(.hero-section)::after {
 .glass-card h3 {
   font-family: var(--font-heading);
   font-size: 2rem;
-  color: var(--primary-dark);
+  color: var(--primary-light);
   margin-bottom: 1.5rem;
   border-bottom: 1px solid var(--primary-light);
   padding-bottom: 1rem;
@@ -654,7 +654,7 @@ section:not(.hero-section)::after {
 
 .btn-outline:hover {
   background: var(--accent);
-  color: var(--primary-dark);
+  color: var(--primary-light);
 }
 
 /* Gifts */
@@ -670,7 +670,7 @@ section:not(.hero-section)::after {
 }
 
 .gift-section .section-heading {
-  color: var(--primary-dark);
+  color: var(--primary-light);
   margin-bottom: 2rem;
 }
 
@@ -717,7 +717,7 @@ section:not(.hero-section)::after {
 .bank-name {
   font-family: var(--font-heading);
   font-size: 1.8rem;
-  color: var(--primary-dark);
+  color: var(--primary-light);
   margin-bottom: 1rem;
 }
 
@@ -782,7 +782,7 @@ section:not(.hero-section)::after {
   font-size: clamp(3rem, 8vw, 5rem);
   font-weight: 600;
   margin-top: 1rem;
-  color: var(--primary-dark);
+  color: var(--primary-light);
 }
 
 .footer-bottom-line {
