@@ -371,7 +371,7 @@ function App() {
                 viewport={{ once: true, margin: "-50px" }}
                 variants={staggerContainer}
               >
-                <motion.h3 variants={fadeUp}>Telah Dilaksanakan:<br/>Akad Nikah & Resepsi</motion.h3>
+                <motion.h3 variants={fadeUp}>Akan Dilaksanakan:<br/>Akad Nikah & Resepsi</motion.h3>
                 <motion.div variants={fadeUp} className="event-detail-row">
                   <Calendar size={20} />
                   <span>5 Agustus 2026</span>
