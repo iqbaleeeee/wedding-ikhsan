@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
 
 :root {
-  --primary: #A28B65; /* Tan / Light Brown */
+  --primary: #87714C; /* Darker Tan / Light Brown for better contrast */
   --primary-light: #E2E2E2; /* Light Gray / Off-white */
-  --primary-dark: #403F31; /* Dark Olive (For Text) */
-  --accent: #CEB594; /* Sand / Beige */
+  --primary-dark: #1F1E16; /* Very Dark Olive (High Contrast For Text) */
+  --accent: #B89C79; /* Darker Sand / Beige */
   --bg: #6B6B54; /* Olive Green Background */
-  --text-main: #403F31; /* Dark Olive for high contrast on light cards */
-  --text-muted: #6B6B54; /* Olive Green for muted text */
+  --text-main: #1F1E16; /* Very Dark Olive for high contrast */
+  --text-muted: #3D3D31; /* Darker Olive for muted text */
   
   --font-heading: 'Playfair Display', serif;
   --font-body: 'Montserrat', sans-serif;
