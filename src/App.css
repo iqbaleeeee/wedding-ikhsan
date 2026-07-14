@@ -554,8 +554,8 @@ section:not(.hero-section)::after {
 }
 
 .couple-info p {
-  color: var(--primary-dark);
-  font-weight: 600;
+  color: var(--text-main);
+  font-weight: 500;
   line-height: 1.8;
   font-size: clamp(1rem, 2vw, 1.1rem);
 }
