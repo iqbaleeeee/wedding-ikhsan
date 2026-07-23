@@ -362,7 +362,7 @@ function App() {
               viewport={{ once: true }}
               style={{ marginBottom: '3rem', fontSize: '1.1rem', color: 'var(--primary-dark)', maxWidth: '700px', marginLeft: 'auto', marginRight: 'auto', fontStyle: 'italic' }}
             >
-              *Rangkaian acara Akad Nikah telah diselenggarakan pada tanggal 5 Agustus 2026. Undangan ini adalah untuk menghadiri resepsi Ngunduh Mantu.
+              *Rangkaian acara Akad Nikah akan dilaksanakan pada tanggal 5 Agustus 2026. Undangan ini adalah untuk menghadiri resepsi Ngunduh Mantu.
             </motion.p>
 
             <div className="event-cards">
