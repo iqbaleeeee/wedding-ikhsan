@@ -289,7 +289,7 @@ function App() {
                   transition={{ duration: 0.8, delay: index * 0.15 }}
                   className="gallery-item"
                 >
-                  <img src={src} alt={`Prewedding ${index + 1}`} className="prewedding-img" />
+                  <img src={`${src}?v=new`} alt={`Prewedding ${index + 1}`} className="prewedding-img" />
                 </motion.div>
               ))}
             </div>
