@@ -221,8 +221,6 @@ function App() {
 
           {/* Turut Mengundang Section */}
           <section className="turut-mengundang-section">
-            <div className="floral-corner floral-top-right"></div>
-            <div className="floral-corner floral-bottom-left"></div>
             <GununganSVG />
             <motion.div 
               initial="hidden" 
@@ -239,9 +237,8 @@ function App() {
             </motion.div>
           </section>
 
-          {/* Intro Section with Corner Florals */}
+          {/* Intro Section */}
           <section className="intro-section">
-            <div className="floral-corner floral-top-left"></div>
             <GununganSVG />
             <motion.div 
               initial="hidden" 
@@ -269,8 +266,6 @@ function App() {
 
           {/* Prewedding Photo Section */}
           <section className="prewedding-section">
-            <div className="floral-corner floral-top-left"></div>
-            <div className="floral-corner floral-bottom-right"></div>
             <GununganSVG />
             <motion.h2 
               className="section-heading"
@@ -304,8 +299,6 @@ function App() {
 
           {/* Couple Section */}
           <section className="couple-section">
-            <div className="floral-corner floral-top-right"></div>
-            <div className="floral-corner floral-bottom-left"></div>
             <div className="couple-grid">
               
               <motion.div 
@@ -315,7 +308,10 @@ function App() {
                 viewport={{ once: true, margin: "-100px" }}
                 transition={{ duration: 1 }}
               >
-                <div className="couple-info text-only">
+                <div className="img-frame">
+                  <img src="/ikhsan.jpeg" alt="Ikhsan" />
+                </div>
+                <div className="couple-info">
                   <h2>Ikhsan Pratama Nuriana</h2>
                   <p className="parents-text">Putra dari Bapak Waryana<br/>& Ibu Yeti Nurhayati</p>
                 </div>
@@ -330,7 +326,10 @@ function App() {
                 viewport={{ once: true, margin: "-100px" }}
                 transition={{ duration: 1, delay: 0.2 }}
               >
-                <div className="couple-info text-only">
+                <div className="img-frame">
+                  <img src="/indah.jpeg" alt="Indah" />
+                </div>
+                <div className="couple-info">
                   <h2>Indah Nur Octaviani</h2>
                   <p className="parents-text">Putri dari Bapak Suherman<br/>& Ibu Dina</p>
                 </div>
@@ -341,9 +340,6 @@ function App() {
 
           {/* Events */}
           <section className="event-section">
-            <div className="floral-corner floral-top-left"></div>
-            <div className="floral-corner floral-bottom-right"></div>
-            
             <GununganSVG />
             <motion.h2 
               className="section-heading"
@@ -363,28 +359,16 @@ function App() {
               <CountdownTimer />
             </motion.div>
 
-            <div className="event-cards">
-              <motion.div 
-                className="event-card glass-card"
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, margin: "-50px" }}
-                variants={staggerContainer}
-              >
-                <motion.h3 variants={fadeUp}>Akan Dilaksanakan:<br/>Akad Nikah & Resepsi</motion.h3>
-                <motion.div variants={fadeUp} className="event-detail-row">
-                  <Calendar size={20} />
-                  <span>5 Agustus 2026</span>
-                </motion.div>
-                <motion.div variants={fadeUp} className="event-detail-row address">
-                  <MapPin size={24} />
-                  <span>Leviticus 11</span>
-                </motion.div>
-                <motion.div variants={fadeUp} className="event-note" style={{ marginTop: '15px', padding: '10px', background: 'rgba(255,255,255,0.1)', borderRadius: '8px', borderLeft: '4px solid var(--accent)', fontSize: '0.9rem', fontStyle: 'italic', color: 'var(--accent)'}}>
-                  *Acara ini telah berlangsung. Undangan ini adalah untuk menghadiri resepsi Ngunduh Mantu di rumah pada tanggal 8 Agustus.
-                </motion.div>
-              </motion.div>
+            <motion.p 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              style={{ marginBottom: '3rem', fontSize: '1.1rem', color: 'var(--primary-dark)', maxWidth: '700px', marginLeft: 'auto', marginRight: 'auto', fontStyle: 'italic' }}
+            >
+              *Rangkaian acara Akad Nikah telah diselenggarakan pada tanggal 5 Agustus 2026. Undangan ini adalah untuk menghadiri resepsi Ngunduh Mantu.
+            </motion.p>
 
+            <div className="event-cards">
               <motion.div 
                 className="event-card glass-card"
                 initial="hidden"
@@ -431,8 +415,6 @@ function App() {
 
           {/* Closing / Doa Restu (Menggantikan Wedding Gift) */}
           <section className="gift-section">
-            <div className="floral-corner floral-top-left"></div>
-            <div className="floral-corner floral-top-right"></div>
             <motion.div
               initial="hidden"
               whileInView="visible"
