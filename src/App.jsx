@@ -279,8 +279,7 @@ function App() {
             <div className="prewedding-gallery">
               {[
                 '/prewed1.jpg',
-                '/prewed2.jpeg',
-                '/prewed4.png'
+                '/prewed2.jpeg'
               ].map((src, index) => (
                 <motion.div 
                   key={index}
