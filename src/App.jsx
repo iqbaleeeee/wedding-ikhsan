@@ -280,7 +280,6 @@ function App() {
               {[
                 '/prewed1.jpg',
                 '/prewed2.jpeg',
-                '/prewed3.jpeg',
                 '/prewed4.png'
               ].map((src, index) => (
                 <motion.div 

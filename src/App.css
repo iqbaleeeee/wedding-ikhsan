@@ -440,8 +440,9 @@ section:not(.hero-section)::after {
 }
 
 .prewedding-gallery {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 2rem;
   width: 100%;
   max-width: 900px;
@@ -449,6 +450,8 @@ section:not(.hero-section)::after {
 }
 
 .gallery-item {
+  flex: 1 1 300px;
+  max-width: 400px;
   border-radius: 16px;
   overflow: hidden;
   border: 3px solid var(--primary-light);
